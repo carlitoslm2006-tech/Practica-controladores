@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoftKey - Licencias de Software</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#">Soft<span>Key</span></a>
+      <div class="nav-links">
+        <a href="#destacados">Destacados</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#ultimas">Últimas</a>
+        <a href="#todos">Todos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">TIENDA DIGITAL</p>
+        <h1>Licencias originales.<br><span>Al mejor precio.</span></h1>
+        <p class="hero-text">Encuentra el software que necesitas y recibe tu clave al instante.</p>
+        <a class="hero-button" href="#todos">Ver licencias</a>
+      </div>
+      <div class="hero-card">
+        <span>Hasta</span>
+        <strong>40%</strong>
+        <small>de descuento</small>
+      </div>
+    </section>
+
+    <section id="destacados" class="section">
+      <div class="section-title">
+        <div><p class="eyebrow">LO MÁS POPULAR</p><h2>Licencias destacadas</h2></div>
+        <a href="#todos">Ver todas</a>
+      </div>
+      <div id="featured-products" class="products-grid"></div>
+    </section>
+
+    <section id="ofertas" class="section offers-section">
+      <div class="section-title">
+        <div><p class="eyebrow">AHORRA MÁS</p><h2>Mejores ofertas</h2></div>
+      </div>
+      <div id="offer-products" class="products-grid"></div>
+    </section>
+
+    <section id="ultimas" class="section">
+      <div class="section-title">
+        <div><p class="eyebrow">NOVEDADES</p><h2>Últimas licencias</h2></div>
+      </div>
+      <div id="latest-products" class="products-grid"></div>
+    </section>
+
+    <section id="todos" class="section">
+      <div class="section-title">
+        <div><p class="eyebrow">CATÁLOGO COMPLETO</p><h2>Todos los productos</h2></div>
+      </div>
+      <div id="all-products" class="products-grid"></div>
+    </section>
+  </main>
+
+  <div id="buy-modal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button id="close-modal" class="close-button" type="button" aria-label="Cerrar">&times;</button>
+      <p class="eyebrow">COMPRA REALIZADA</p>
+      <h2 id="modal-title">Tu licencia</h2>
+      <p>Esta es tu clave de producto:</p>
+      <div id="license-key" class="license-key"></div>
+      <button id="copy-key" class="buy-button" type="button">Copiar clave</button>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
